@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.nav-items{
+   padding-top: 17px;
+}
+
+.nav-items li .nav-link:hover{
+  color: orange;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+
+
+
+.stic {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 50; 
+    display: flex;
+    align-items: center;
+}
+
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 65px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 13px;
+}
+
+nav ul li .nav-link {
+    text-decoration: none;
+    color: #5a5959;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+.hameburger {
+    display: none;
+    font-size: 35px;
+    z-index: 101; 
+    position: relative;
+}
+
+.menu {
+    z-index: 101;
+}
+
+
+.sheet-content {
+    z-index: 200; 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Responsive design adjustments */
+@media (max-width: 580px) {
+    .nav-items {
+        display: none;
+    }
+    .hameburger {
+        display: block;
+    }
+}

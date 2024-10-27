@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.li{
+    padding: 10px;
+    color: black;
+}
+
+.li:hover{
+    background: grey;
+    border-radius: 5px;
+    color: orange;
+}
